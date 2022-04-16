@@ -1,0 +1,5 @@
+terraform/
+terraform.tfstate
+.terraform.lock.hcl
+.terraform/providers/registry.terraform.io/hashicorp/aws/3.75.1/darwin_arm64/terraform-provider-aws_v3.75.1_x5
+.terraform/providers/registry.terraform.io/hashicorp/archive/2.2.0/darwin_arm64/terraform-provider-archive_v2.2.0_x5

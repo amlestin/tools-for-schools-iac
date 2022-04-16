@@ -1,15 +1,18 @@
 terraform {
   required_providers {
     aws = {
-      source  = "hashicorp/aws"
-      version = "~> 3.27"
+      source = "hashicorp/aws"
     }
   }
-
-  required_version = ">= 0.14.9"
 }
 
 provider "aws" {
   profile = "default"
   region  = "us-east-1"
+}
+
+data "archive_file" "verbal_lambda_zip" {
+  type        = "zip"
+  source_file = "bin/verbal_api"
+  output_path = "bin/verbal_api.zip"
 }
